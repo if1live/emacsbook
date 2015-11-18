@@ -1,0 +1,49 @@
+
+<link rel="stylesheet" href="css/chap.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="css/code.css" type="text/css" media="screen, projection" />
+
+<div id="container">
+  <header>
+  </header>
+
+  <nav id="main_nav">
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="http://blog.taesoo.org/">Blog</a></li>
+      <li><a href="http://pdos.csail.mit.edu/~taesoo/">About</a></li>
+      <li><a href="/rss.xml">RSS</a></li>
+    </ul>
+  </nav>
+  
+  <div id="main" role="main">
+    <article class="post">
+      <header>
+        <h3><span class="hint">Chap #<%= chap %></span><%= date %></h3>
+        <h1><%= info["title"] %></h1>
+      </header>
+      
+      <%= html %>
+
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_shortname = 'emacsbook';
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+      
+    </article>
+  </div>
+ 
+  <footer>
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">
+      <img alt="CC" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/88x31.png" />
+    </a>
+  </footer>
+</div>

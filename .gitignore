@@ -1,0 +1,12 @@
+chap*/*.markdown
+/out.*
+/*.pdf
+/latex/main.aux
+/latex/main.log
+/latex/main.out
+/latex/main.pdf
+/latex/main.tex
+/latex/main.toc
+/.snap-dep
+/script/out.png
+/script/screen.jpg
